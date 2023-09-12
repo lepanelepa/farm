@@ -14,6 +14,6 @@ export class ApiService {
    * This method returns animals
    */
     getAnimals(): Observable<Animal[]>{
-      return this.httpClient.get<Animal[]>(`https://localhost:3000/api/animals`);
+      return this.httpClient.get<Animal[]>(`https://localhost:44305/api/animals`);      
     }
 }
