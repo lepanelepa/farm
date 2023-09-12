@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule, FormGroup } from '@angular/forms';
 import { DialogAddAnimalComponent } from './dialog-add-animal/dialog-add-animal.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -15,6 +15,8 @@ import { MatInputModule} from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
 import { AnimalsComponent } from './animals/animals.component';
 import { CommonModule, NgFor } from '@angular/common';
+
+
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -24,7 +26,7 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
     ],
     providers: [],
     bootstrap: [AppComponent],
-    imports: [
+    imports: [     
         CommonModule,
         HttpClientModule,
         BrowserModule,
@@ -39,7 +41,7 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
         ReactiveFormsModule,  
         NgFor,   
         NoopAnimationsModule,
-        AnimalsComponent,     
+        AnimalsComponent,         
     ]
 })
 export class AppModule { }
